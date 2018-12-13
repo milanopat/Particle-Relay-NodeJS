@@ -26,10 +26,10 @@ relayOne.on("value", function(snapshot) {
 
 function updateRelayOne(status) {
     if (status == "ON") {
-        particle.callFunction({deviceId: deviceID, name:'lightLed0', argument: "ON", auth: token});
+        particle.callFunction({deviceId: deviceID, name:'relayControlOne', argument: "ON", auth: token});
     }
     else if (status == "OFF") {
-        particle.callFunction({deviceId: deviceID, name:'lightLed0', argument: "OFF", auth: token});
+        particle.callFunction({deviceId: deviceID, name:'relayControlOne', argument: "OFF", auth: token});
     }  
 }
 
@@ -42,10 +42,10 @@ relayTwo.on("value", function(snapshot) {
 
 function updateRelayTwo(status) {
     if (status == "ON") {
-        particle.callFunction({deviceId: deviceID, name:'lightLed1', argument: "ON", auth: token});
+        particle.callFunction({deviceId: deviceID, name:'relayControlTwo', argument: "ON", auth: token});
     }
     else if (status == "OFF") {
-        particle.callFunction({deviceId: deviceID, name:'lightLed1', argument: "OFF", auth: token});
+        particle.callFunction({deviceId: deviceID, name:'relayControlTwo', argument: "OFF", auth: token});
     }  
 }
 
@@ -58,10 +58,10 @@ relayThree.on("value", function(snapshot) {
 
 function updateRelayThree(status) {
     if (status == "ON") {
-        particle.callFunction({deviceId: deviceID, name:'lightLed2', argument: "ON", auth: token});
+        particle.callFunction({deviceId: deviceID, name:'relayControlThree', argument: "ON", auth: token});
     }
     else if (status == "OFF") {
-        particle.callFunction({deviceId: deviceID, name:'lightLed2', argument: "OFF", auth: token});
+        particle.callFunction({deviceId: deviceID, name:'relayControlThree', argument: "OFF", auth: token});
     }  
 }
 
@@ -73,9 +73,9 @@ relayFour.on("value", function(snapshot) {
 
 function updateRelayFour(status) {
     if (status == "ON") {
-        particle.callFunction({deviceId: deviceID, name:'lightLed3', argument: "ON", auth: token});
+        particle.callFunction({deviceId: deviceID, name:'relayControlFour', argument: "ON", auth: token});
     }
     else if (status == "OFF") {
-        particle.callFunction({deviceId: deviceID, name:'lightLed3', argument: "OFF", auth: token});
+        particle.callFunction({deviceId: deviceID, name:'relayControlFour', argument: "OFF", auth: token});
     }  
 }
